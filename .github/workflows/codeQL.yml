@@ -9,12 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        include:
-          - language: javascript-typescript
-            build-mode: none
-          - language: csharp
-            build-mode: autobuild
-            
+        language: ['csharp', 'javascript-typescript']            
 
     permissions:
       # required for all workflows
